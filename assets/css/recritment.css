@@ -1,0 +1,143 @@
+.recritment-rcm {
+  height: 569px;
+  background-color: #f2b526;
+  position: relative;
+}
+
+.recritment-top {
+  height: 193px;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1830601092896175);
+}
+
+.top__right-content {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.top__right-recrit {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #f0f3bd;
+}
+
+.top__left {
+  display: flex;
+  font-size: 2rem;
+  padding: 40px;
+}
+
+.top__left-phone {
+  margin-right: 14px;
+  position: relative;
+}
+.top__left-phone::after {
+  content: "";
+  width: 2px;
+  height: 20px;
+  background-color: #f0f3bd;
+  position: absolute;
+  margin: -1px 0px 0px 6px;
+}
+
+.footer-notify {
+  font-size: 6rem;
+  text-transform: uppercase;
+  padding: 50px 0px;
+  display: block;
+  color: rgb(255, 255, 255);
+}
+
+.footer-mid {
+  font-size: 2rem;
+  padding: 0px 0px 20px 0px;
+  color: #ffffffcf;
+}
+
+.footer-content {
+  font-size: 1.8rem;
+  color: white;
+}
+.footer-content-item:nth-child(2) {
+  padding: 20px 0px;
+}
+.footer__left {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(20%, -5%);
+}
+.footer__left img {
+  height: 279px;
+  width: 539px;
+}
+/* --------------------- */
+.recritment-endow-ed {
+  font-size: 4rem;
+  position: relative;
+  align-items: center;
+  padding: 80px 0;
+}
+.recritment-endow-content {
+  display: flex;
+  padding: 20px;
+}
+.recritment-endow-content img {
+  width: 369px;
+  height: 237px;
+}
+.recritment-endow-ct {
+  margin-left: 20px;
+  width: 557px;
+}
+.recritment-endow-ct h4 {
+  font-size: 3rem;
+  margin-top: 5px;
+  font-weight: 400;
+}
+.recritment-endow-ct p {
+  height: 20px;
+  font-size: 1.8rem;
+  line-height: 20px;
+}
+.recritment-4worm {
+  margin-top: 300px;
+}
+
+.recritment-4worm-ctn {
+  display: inline-flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recritment-content {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.recritment-ct {
+  font-size: 2rem;
+  padding: 20px;
+  color: rgb(243, 182, 40);
+  font-family: "Lucida Grande";
+  font-style: italic;
+}
+
+.recritment-icon {
+  padding: 20px;
+  font-size: 1.8rem;
+}
+.recritment-icon i {
+  padding: 10px;
+}
+.recritment-ft {
+  font-size: 1.5rem;
+  padding: 10px;
+  color: rgb(137, 137, 137);
+}
