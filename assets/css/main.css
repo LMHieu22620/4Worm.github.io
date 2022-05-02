@@ -89,6 +89,7 @@
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  z-index: 999;
 }
 
 .header__header-row-main-nav-menu {
@@ -121,6 +122,10 @@
 }
 
 .header__header-row-main-nav-item-link:hover {
+  color: var(--color-primary);
+}
+
+.add-color {
   color: var(--color-primary);
 }
 

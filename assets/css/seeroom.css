@@ -142,12 +142,35 @@
     background-color: white;
     height: 750px;
     box-shadow: 0px 0px 13px 1px #ccc;
+    overflow: hidden;
+    transition: all .5s ease;
+
 
 }
 
 .seeroom-room-kind-item-img{
     width: 350px;
     height: 285px;
+    transition: all .5s ease;
+
+}
+
+.seeroom-room-kind-item-img:hover {
+    transform: scale(1.1);
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.seeroom-room-kind-item-seeroom {
+    transition: .6s ease;
+  opacity: 1;
+  position: absolute;
+  inset: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .seeroom-room-kind-item-title {
@@ -155,6 +178,11 @@
     font-weight: 400;
     display: flex;
     justify-content: center;
+}
+.seeroom-room-kind-item-title:hover {
+    color: var(--color-primary);
+    transition: all .3s ease;
+    cursor: pointer;
 }
 
 .seeroom-room-kind-item-dash{

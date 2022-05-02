@@ -1,16 +1,16 @@
 window.onscroll = function() {
-    // pixcelheader();
+    pixcelheader();
     scrollFunction()
 };
 var navbar = document.getElementById("header");
 var sticky = navbar.offsetTop;
-// function pixcelheader() {
-//     if(window.pageYOffset >= sticky){
-//         navbar.classList.add("sticky");
-//     }else {
-//         navbar.classList.remove("sticky")
-//     }
-// }
+function pixcelheader() {
+    if(window.pageYOffset >= sticky){
+        navbar.classList.add("sticky");
+    }else {
+        navbar.classList.remove("sticky")
+    }
+}
 
 var btn = document.getElementById("myBtn")
 
@@ -33,10 +33,14 @@ function topFunction() {
 
 var list = document.getElementById("header-moble");
 
+const addClassitem = document.getElementById("headerClickAdd")
+ 
 function clickitem() {
          list.classList.add("is-active"); 
 }
 function removeitem() {
          
          list.classList.remove("is-active");
+         addClassitem.classList.add("add-color")
+
 }
