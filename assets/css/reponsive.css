@@ -5,6 +5,40 @@
     .widgets__ctn:nth-child(2) {
         margin: 0 65px;
     }
+
+    /* event */
+    .container-event {
+        margin-left: 50px;
+    }
+
+    /* seeroom */
+    .seeroom-room {
+        height: auto;
+    }
+
+    .seeroom-room-ytb-top-boder{
+        margin-left: 55px;
+    }
+    
+    .btn-seeroom {
+        margin-left: 426px;
+    }
+    .seeroom-room-kind-item {
+        width: 300px;
+        height: 827px;
+
+    }
+
+    .seeroom-room-kind-item-img {
+        width: 300px;
+    }
+    .seeroom-room-kind-item:nth-child(1) {
+        margin-left: 10px;
+    }
+    .seeroom-room-footer-end {
+        margin-bottom: 50px;
+    }
+   
 }
 @media only screen and (min-width: 1023px) and (max-width: 1200px) {
     .bgr-img {
@@ -54,6 +88,28 @@
     .about-us__img img {
         width: 517px;
     }
+    /* event */
+    .container-modle-left img{
+        width: 400px;
+    }
+
+    .container-modle-right {
+        transform: translate(64%, -78%);
+    }
+
+     /* contact */
+     .contact-content-tilte {
+        padding: 20px;
+    }
+
+    .contact-content-converse {
+        font-size: 6rem;
+        padding: 25px;
+    }
+
+    .contact-content-right {
+        margin-left: 65px;
+    }
 }
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
     html {
@@ -67,6 +123,12 @@
     }
     .header__header-row-main-nav-item {
         font-size: 1.3rem;
+    }
+    .header__header-row-main-logo img {
+        width: 201px;
+    }
+    .header__header-row-main-nav-menu >.header__header-row-main-nav-item {
+        margin-left: 0;
     }
     .header__header-row-main-nav {
         margin: -3px 0 0 13px;
@@ -181,6 +243,86 @@
     .info-mid-ctn__contact-phone-number {
         font-size: 2rem;
     }
+
+    /* event */
+
+    .container-event-title {
+        font-size: 70px;
+    }
+
+    .container-event-content {
+        font-size: 1.6rem;
+    }
+
+    .container-modle-left img {
+        width: 300px;
+        margin-left: 0;
+    }
+
+    .container-modle-right {
+        width: 300px;
+        transform: translate(60%, -65%);
+     }
+
+     .container-modle-name {
+        font-size: 13px;
+     }
+
+     .container-modle-title {
+        font-size: 30px;
+    }
+
+    .container-modle-content {
+        font-size: 11px;
+    }
+
+    /* contact */
+
+    .contact-content {
+        height: 1105px;
+    }
+
+    .contact-content-flex {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-content-right {
+        background-color: #f5f5f5;
+        margin-top: 50px;
+        line-height: 2;
+        margin-left: 0px;
+    }
+
+    /* seeroom */
+    .seeroom-room {
+        height: auto;
+    }
+    .seeroom-room-ytb-top-boder {
+        background-color: white;
+        width: 636px;
+        height: 417px;
+        margin-left: 0px;
+    }
+    .seeroom-room-ytb-top-boder iframe{
+        width: 636px;
+        height: 417px;
+    }
+
+    .seeroom-room-ytb-top-shadow {
+        margin-top: -40px;
+        margin-left: 80px;
+    }
+
+    .btn-seeroom {
+        margin-left: 240px;
+    }
+    .seeroom-room-footer-end {
+        margin-bottom: 50px;
+    }
+
 }
 
 @media only screen and (max-width: 740px){
@@ -250,7 +392,10 @@
         background-color: var(--color-primary);
     }
 
-    
+    .header__header-row-main-logo img {
+        width: 161px
+    ;
+    }
 
     .header__header-row-main-nav-item-link::before {
         height: 1px;
@@ -461,6 +606,171 @@
         font-size: 1.5rem;
         line-height: 1;
     }
+
+    /* event */
+    .container-modle-ctn {
+        height: 700px;
+    }
+
+    .container-event-title {
+        font-size: 58px;
+    }
+    .container-event-content {
+        color: white;
+        font-size: 1rem;
+        width: 280px;
+    }
+
+    .container-modle {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .container-modle-left img {
+        width: 300px;
+    }
+    
+    .container-modle-right {
+        width: 311px;
+        height: 450px;
+        transform: translate(-48%, 28%);
+    }
+
+    .container-modle-name {
+        font-size: 12px;
+    }
+
+    .container-modle-title {
+        font-size: 22px;
+        font-weight: 400;
+        /* margin: 10px; */
+    }
+
+    .container-modle-content {
+        font-size: 10px;
+    }
+
+    /* contact */
+
+    .contact-content {
+        height: 1100px;
+    }
+    .contact-content-tilte {
+        margin-top: 20px;
+        font-size: 1.6rem;
+        padding: 20px;
+    }
+    .contact-content-converse {
+        font-size: 4rem;
+        padding: 20px;
+    }
+
+    .contact-content-input {
+        width: 260px;
+    }
+
+    .button-sent {
+        width: 260px;
+    }
+
+    .contact-content-flex {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .contact-content-right {
+        background-color: #f5f5f5;
+        width: 350px;
+        height: 445px;
+        margin-top: 30px;
+        padding: 30px;
+        line-height: 2;
+        margin-left: 0px;
+    }
+
+    /* seeroom */
+    .seeroom-room-ytb-top-flex{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .btn-flex-seeroom
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .seeroom-room {
+        height: auto;
+        
+    }
+    .seeroom-room-name {
+        font-size: 2rem;
+    }
+    .seeroom-room-title {
+        font-size: 2.8rem;
+    }
+    .seeroom-room-ytb-top-boder {
+        margin-left: 35px;
+    }
+    .seeroom-room-ytb-top-boder iframe {
+        padding: 35px 35px 0px 35px;
+        width: 278px;
+        height: 230px;
+    }
+    .seeroom-room-ytb-top-boder {
+        width: 278px;
+        height: 230px;
+    }
+
+    .seeroom-room-ytb-top-boder {
+        margin-left: 19px;
+    }
+
+    .seeroom-room-ytb-top-shadow {
+        /* background-color: red; */
+        margin-top: -15px;
+        margin-left: 49px;
+        width: 175px;
+    }
+
+    .btn-seeroom {
+        margin-left: 20px;
+    }
+
+    .btn-seeroom-content {
+        margin-left: 0;
+    }
+
+    .seeroom-room-type-name {
+        margin-left: 0;
+    }
+
+    .seeroom-room-type-title {
+        font-size: 2.3rem;
+        margin-left: 0;
+    }
+
+    .seeroom-room-type-single {
+        font-size: 1.5rem;
+        margin-top: -160px;
+    }
+    .seeroom-room-kind-content {
+        font-size: 2.4rem;
+    }
+    .seeroom-room-kind-ctn {
+        justify-items: center;
+    }
+
+    .seeroom-room-footer-end {
+        margin-bottom: 50px;
+    }
 }
+
+
+
      
 

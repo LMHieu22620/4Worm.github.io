@@ -1,0 +1,105 @@
+.contact-content {
+    height: 650px;
+}
+.contact-content-top {
+    height: 200px;
+    background-color: #242424;
+    width: 100%;
+    color: white;
+}
+
+.contact-content-tilte {
+    margin-top: 20px;
+    font-size: 2rem;
+    padding: 20px 0;
+}
+
+.contact-content-converse {
+    font-size: 6rem;
+    padding: 40px 0;
+    text-transform: uppercase;
+}
+.contact-content-flex{
+    display: flex;
+}
+.contact-content-left {
+    margin-top: 50px;
+}
+.contact-content-item {
+    margin: 20px;
+}
+.contact-content-name {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.contact-content-name span {
+    display: inline-block;
+    margin-left: 3px;
+    color: #eb6a56;
+}
+
+.contact-content-input {
+    width: 400px;
+    height: 50px;
+    padding: 20px;
+    font-size: 1.3rem;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.button-sent {
+    margin: 20px;
+    width: 400px;
+    height: 50px;
+    background-color: var(--color-primary);
+    color: white;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.button-sent:hover {
+    background-color: #f4af0d;
+    transition: all .3s ease;
+}
+.contact-content-right {
+    background-color: #f5f5f5;
+    width: 450px;
+    height: 430px;
+    margin-top: -80px;
+    padding: 30px;
+    line-height: 2;
+    margin-left: 200px;
+}
+.contact-content-ringt-title {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-content-rignt-content {
+    display: grid;
+    justify-items: center;
+    font-size: 1.6rem;
+}
+
+.contact-content-icons {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-content-icon {
+    font-size: 1.2rem;
+    color: var(--color-while);
+    width: 40px;
+    height: 41px;
+    padding: 14px;
+    background-color: var(--color-primary);
+    margin-left: 2px;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    
+}
