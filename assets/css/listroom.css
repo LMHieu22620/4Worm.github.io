@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+
+.listroom-rooms {
+    background-image: url(/assets/img/bannerRooms.jpg);
+    width: 100%;
+    height: 300px;
+}
+.listroom-rooms-title {
+    font-size: 68px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+    color: white;
+    font-family: "cinzel";
+    line-height: 68px;
+    text-transform: uppercase;
+}
+
+
+
+.listroom-content-titleList {
+    font-size: 68px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    /* height: 300px; */
+    align-items: center;
+    color: black;
+    font-family: "cinzel";
+    line-height: 68px;
+    text-transform: uppercase;
+    z-index: 999;
+    margin: 0px 0px 10px 0;
+}
+
+.listroom-content-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-top: 20px;
+    font-family: "cinzel";
+    text-transform: uppercase;
+}
+.listrooms-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-row-gap: 5rem;
+    grid-column-gap: 46px;
+    margin-bottom: 20px;
+}
+.room {
+    position: relative;
+    margin: auto;
+    box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s linear;
+    border: 1px solid #e3ac2b;
+    
+}
+.room:hover {
+    box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.room__ctn {
+    position: relative;
+}
+.room__ctn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+.room__ctn:hover .room__ctn__price {
+    opacity: 0;
+}
+.room__ctn:hover .room__ctn__link {
+    transform: translate(-50%, -50%) scale(1);
+}
+.room__ctn img {
+    width: 320px;
+    display: block;
+    transition: all 0.3s linear;
+}
+.room__ctn img:hover {
+    opacity: 0.3;
+}
+.room__ctn__price {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.3rem 0.6rem 0.5rem;
+    border-bottom-right-radius: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: all 0.3s linear;
+}
+.room__ctn__price h6 {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+.room__ctn__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(0);
+    transition: all 0.3s linear;
+}
+.room__info {
+    text-transform: capitalize;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #dd0000;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+  .btn-14 {
+    background: var(--color-primary);
+    border: none;
+    z-index: 1;
+  }
+  .btn-14:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #eaf818;
+    background-image: linear-gradient(315deg, #eaf818 0%, #f6fc9c 74%);
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .btn-14:hover {
+    color: #000;
+  }
+  .btn-14:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+  .btn-14:active {
+    top: 2px;
+  }
