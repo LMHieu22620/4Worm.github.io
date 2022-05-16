@@ -1,5 +1,5 @@
 p {
-    margin-top: 11px;
+    margin-top: 11px !important ;
 }
 .detail-room {
     height: auto;
@@ -67,17 +67,24 @@ p {
      color: black;
 }
 .book button{
-    background: #bfa14c;
+    background: var(--color-primary);
     border: none;
     width: 150px;
     height: 60px;
+    border-radius: 3px;
+    transition: all .3s ease;
+
 }
 .book button:hover{
-    background: #9f8439;
+    border-radius: 20px;
+    transition: all .3s ease;
+
+
 }
 .book button a{
     color: black;
-    font-size: 19.2px;
+    font-size: 1.3rem;
     line-height: 23.04px;
     text-decoration: none;
 }
+

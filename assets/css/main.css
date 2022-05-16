@@ -293,7 +293,7 @@
   top: 0;
   width: 100%;
   background-color: #fff;
-  z-index: 1;
+  z-index: 9999;
   box-shadow: 0 0 8px rgb(174 198 203 / 95%);
   transition: height .2s ease;
 }

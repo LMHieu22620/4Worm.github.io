@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao Diện Đặt Phòng</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="assets/font/fontawesome-free-5.15.3-web/css/all.min.css"
+  />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/detail.css" />
+  <link rel="stylesheet" href="assets/css/reponsive.css" />
+  <link rel="stylesheet" href="assets/vendors/grid.css" />
+  <link rel="stylesheet" href="assets/css/bookroom.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="header__header-row">
+          <div class="grid">
+            <div class="header__header-row-top">
+              <div class="header__header-row-top__left">
+                <i class="fa fa-home header__header-row-top-icon"></i>
+                <p class="header__header-row-top-content">
+                  439 Hùng Vương, Tam Kỳ, Quảng Nam
+                </p>
+              </div>
+              <div class="header__header-row-top__right">
+                <i
+                  class="fab fa-facebook-f header__header-row-top__right-icon"
+                ></i>
+                <i class="fab fa-youtube header__header-row-top__right-icon"></i>
+                <i
+                  class="fab fa-instagram header__header-row-top__right-icon"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__header-row-mid" id="header">
+          <div class="grid">
+            <div class="header__header-row-main">
+              <div class="header__header-row-main-lg-nav">
+                <div class="header__header-row-mobie-icon" onclick="clickitem()">
+                  <i class="fas fa-bars"></i>
+                </div>
+                <div class="header__header-row-main-logo">
+                  <a href="/index.html">
+                    <img src="assets/img/Logo1.png" alt="" />
+                  </a>
+                </div>
+                <div class="header__header-row-main-nav" id="header-moble">
+                  <div
+                    class="header__header-row-main-mobie-close"
+                    onclick="removeitem()"
+                  >
+                    <i class="fas fa-times"></i>
+                  </div>
+                  <ul class="header__header-row-main-nav-menu">
+                    <li class="header__header-row-main-nav-item">
+                      <i
+                        class="fas fa-home header__header-row-main-nav-item-icon"
+                      ></i>
+                      <a
+                        href="/index.html"
+                        class="header__header-row-main-nav-item-link add-color"
+                      >
+                        trang chủ
+                      </a>
+                    </li>
+  
+                    <li class="header__header-row-main-nav-item">
+                      <i
+                        class="fas fa-person-booth header__header-row-main-nav-item-icon"
+                      ></i>
+                      <a
+                        href="./xemphong.html"
+                        class="header__header-row-main-nav-item-link"
+                      >
+                        phòng
+                      </a>
+                    </li>
+                    <li class="header__header-row-main-nav-item">
+                      <i
+                        class="far fa-newspaper header__header-row-main-nav-item-icon"
+                      ></i>
+                      <a
+                        href="./sukien.html"
+                        class="header__header-row-main-nav-item-link"
+                      >
+                        tin tức
+                      </a>
+                    </li>
+                    <li class="header__header-row-main-nav-item">
+                      <i
+                        class="fas fa-phone-alt header__header-row-main-nav-item-icon"
+                      ></i>
+                      <a
+                        href="/lienhe.html"
+                        class="header__header-row-main-nav-item-link"
+                      >
+                        liên hệ
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="header__header-row-main-login">
+                    <a href="" class="header__header-row-main-login-login">
+                      <svg
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        xml:space="preserve"
+                        viewBox="0 0 482.9 482.9"
+                        class="header__header-row-main-login-icon"
+                        style="
+                          enable-background: new 0 0 482.9 482.9;
+                          width: 15px;
+                          height: 15px;
+                        "
+                      >
+                        <path
+                          d="M239.7,260.2c0.5,0,1,0,1.6,0c0.2,0,0.4,0,0.6,0c0.3,0,0.7,0,1,0c29.3-0.5,53-10.8,70.5-30.5
+                            c38.5-43.4,32.1-117.8,31.4-124.9c-2.5-53.3-27.7-78.8-48.5-90.7C280.8,5.2,262.7,0.4,242.5,0h-0.7c-0.1,0-0.3,0-0.4,0h-0.6
+                            c-11.1,0-32.9,1.8-53.8,13.7c-21,11.9-46.6,37.4-49.1,91.1c-0.7,7.1-7.1,81.5,31.4,124.9C186.7,249.4,210.4,259.7,239.7,260.2z
+                            M164.6,107.3c0-0.3,0.1-0.6,0.1-0.8c3.3-71.7,54.2-79.4,76-79.4h0.4c0.2,0,0.5,0,0.8,0c27,0.6,72.9,11.6,76,79.4
+                            c0,0.3,0,0.6,0.1,0.8c0.1,0.7,7.1,68.7-24.7,104.5c-12.6,14.2-29.4,21.2-51.5,21.4c-0.2,0-0.3,0-0.5,0l0,0c-0.2,0-0.3,0-0.5,0
+                            c-22-0.2-38.9-7.2-51.4-21.4C157.7,176.2,164.5,107.9,164.6,107.3z"
+                        ></path>
+                        <path
+                          d="M446.8,383.6c0-0.1,0-0.2,0-0.3c0-0.8-0.1-1.6-0.1-2.5c-0.6-19.8-1.9-66.1-45.3-80.9c-0.3-0.1-0.7-0.2-1-0.3
+                            c-45.1-11.5-82.6-37.5-83-37.8c-6.1-4.3-14.5-2.8-18.8,3.3c-4.3,6.1-2.8,14.5,3.3,18.8c1.7,1.2,41.5,28.9,91.3,41.7
+                            c23.3,8.3,25.9,33.2,26.6,56c0,0.9,0,1.7,0.1,2.5c0.1,9-0.5,22.9-2.1,30.9c-16.2,9.2-79.7,41-176.3,41
+                            c-96.2,0-160.1-31.9-176.4-41.1c-1.6-8-2.3-21.9-2.1-30.9c0-0.8,0.1-1.6,0.1-2.5c0.7-22.8,3.3-47.7,26.6-56
+                            c49.8-12.8,89.6-40.6,91.3-41.7c6.1-4.3,7.6-12.7,3.3-18.8c-4.3-6.1-12.7-7.6-18.8-3.3c-0.4,0.3-37.7,26.3-83,37.8
+                            c-0.4,0.1-0.7,0.2-1,0.3c-43.4,14.9-44.7,61.2-45.3,80.9c0,0.9,0,1.7-0.1,2.5c0,0.1,0,0.2,0,0.3c-0.1,5.2-0.2,31.9,5.1,45.3
+                            c1,2.6,2.8,4.8,5.2,6.3c3,2,74.9,47.8,195.2,47.8s192.2-45.9,195.2-47.8c2.3-1.5,4.2-3.7,5.2-6.3
+                            C447,415.5,446.9,388.8,446.8,383.6z"
+                        ></path>
+                      </svg>
+                      <span> Đăng nhập </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="detail-room">
+        <div class="grid" >
+            <div class="row">
+              
+              <div class="col-md-7 information ">
+                  <div class="infor-title" >Thông Tin Liên Lạc</div>
+                  <div class="col-md-6 edit" >
+                    <div class="infor-name-ctn" >
+                        <div>Họ Và Tên:</div>
+                        <input class="infor-input infor-name"  />
+                    </div>
+                    <form>
+                        <div class="row form-group">
+                            <label for="date" class="col-sm-12 col-form-label">Ngày Đến</label>
+                            <div class="col-sm-12">
+                                <div class="input-group date" id="datepicker">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-append">
+                                        <span class="input-group-text bg-white">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="infor-name-ctn" >
+                        <div>Email:</div>
+                        <input class="infor-input infor-email"  />
+                    </div>
+                    <div class="infor-name-ctn" >
+                        <div>Số Thẻ:</div>
+                        <input class="infor-input infor-number"  />
+                    </div>
+                    <div class="service-option" >
+                        <div class="service-option-title" >
+                            Dịch Vụ Tùy Chọn
+                        </div>
+                        <div class="service-option-select"  >
+                            <input type="checkbox">
+                            <p>Xe đưa đón đến sân bay</p>
+                        </div>
+                        <div class="service-option-select"  >
+                            <input type="checkbox">
+                            <p>Giặt ủi quần áo</p>
+                        </div>
+                        <div class="service-option-select"  >
+                            <input type="checkbox">
+                            <p>Dịch vụ karaoke</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 edit" >
+                    <div class="infor-name-ctn" >
+                        <div>Họ Và Tên:</div>
+                        <input class="infor-input infor-name"  />
+                    </div>
+                    <form>
+                        <div class="row form-group">
+                            <label for="date" class="col-sm-12 col-form-label">Ngày Đi</label>
+                            <div class="col-sm-12">
+                                <div class="input-group date" id="datepicker1">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-append">
+                                        <span class="input-group-text bg-white">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="infor-name-ctn" >
+                        <div>Nhập lại Email:</div>
+                        <input class="infor-input infor-email"  />
+                    </div>
+                    <div class="infor-name-ctn" >
+                        <div>Chúng tôi chấp nhận thanh toán sau</div>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa fa-cc-amex" style="color:blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fa fa-cc-discover" style="color:orange;"></i>
+                          </div>
+                    </div>
+                    <div class="service-option" >
+                        <div class="service-option-title" >
+                            Xác Nhận Đặt Phòng
+                        </div>
+                        <div class="service-option-select "  >
+                            <input  class="service-option-select-input" type="checkbox">
+                            <p>Tôi đã đọc và đông ý với các điều khoản & điều kiện và chính sách bảo mật</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="infor-btn" >
+                    <div class="btn-book" >
+                        Đặt Phòng
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <h2 class="detail-room-title" >IN-ROOM AMENITIES</h2>
+                <div class="row img-icon">
+                  <div class="col-md-12 description-room " >
+                    <img class="descrip-img" src="/assets/img/suite.jpg" alt="" />
+                    <div class="decscrip-room" >
+                      <p class="decscrip-room-title" >Suite</p>
+                      <p>Double Room</p>
+                    </div>
+                  </div>
+                  <div
+                  style="background: #333; width: 300px; height: 1px; margin:10px auto"
+                ></div>
+                  <div class="col-md-6">
+                    <img src="/assets/img/icon1.png" alt="" />
+                    <p>Phục Vụ Ăn Sáng Tại Phòng</p>
+                  </div>
+                  <div class="col-md-6" style="margin-top: -9px;" >
+                    <img src="/assets/img/icon2.png" alt="" />
+                    <p>33 m + Ban Công</p>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="/assets/img/icon5.png" alt="" />
+                    <p>Bồn Tắm</p>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="/assets/img/icon4.png" alt="" />
+                    <p>Loại Giường: King/ Twin</p>
+                  </div>
+                 
+                </div>
+                <div
+                  style="background: #333; width: 300px; height: 1px; margin: auto"
+                ></div>
+                <div class="book book-edit">
+                 <div class="book-price" >
+                    Giá Tiền: 
+                    <p>VND 1,500,000 / Đêm</p>
+                 </div>
+                 <p class="book-edit-content">Mọi thắc mắc xin vui lòng liên hệ 1900 0000 để được hỗ trợ trực tiếp</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+      <footer class="footer">
+        <div class="map-top">
+          <div class="grid">
+            <div class="map-top__ctn">
+              <div class="map-top__ctn-bgr">
+                <iframe
+                  class="map-top__ctn-bground"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7687.02030037631!2d108.482881!3d15.564369000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3169dcc1b9922cc9%3A0x15678bdf2baff71!2zVHAuIFRhbSBL4buzLCBRdeG6o25nIE5hbSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2sus!4v1629127556431!5m2!1svi!2sus"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <div class="map-top__ctn-content">
+                <p class="map-top__ctn-content-textbig">
+                  4WORM HOTEL luôn mong muốn được phục vụ khách hàng. Hãy đến với
+                  chúng tôi, bạn sẽ được trải nghiệm những dịch vụ tốt nhất!
+                </p>
+                <div class="map-top__ctn-content-text">
+                  <p class="map-top__ctn-content-text-nb1">Phone</p>
+                  <p class="map-top__ctn-content-text-nb2">+84 0388 339 449</p>
+                </div>
+                <div class="map-top__ctn-content-text">
+                  <p class="map-top__ctn-content-text-nb1">Email</p>
+                  <p class="map-top__ctn-content-text-nb2">
+                    4wormhotel@gmail.com
+                  </p>
+                </div>
+                <div class="map-top__ctn-content-text">
+                  <p class="map-top__ctn-content-text-nb1">Address</p>
+                  <p class="map-top__ctn-content-text-nb2">
+                    439 Hùng Vương Street, Tam Kỳ
+                  </p>
+                  <p
+                    class="map-top__ctn-content-text-nb2 map-top__ctn-content-text-nb2-qn"
+                  >
+                    Quảng Nam
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-mid">
+          <div class="grid">
+            <div class="info-mid-ctn">
+              <div class="info-mid-ctn__textbig">
+                <h3>4WORM</h3>
+              </div>
+              <div class="info-mid__ctn-icon">
+                <a href="" class="info-mid__ctn-icon-icon">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="info-mid__ctn-icon-icon">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="info-mid__ctn-icon-icon">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="" class="info-mid__ctn-icon-icon">
+                  <i class="fab fa-youtube-square"></i>
+                </a>
+              </div>
+              <div class="info-mid-ctn-text">
+                <p>
+                  Hãy đến với 4worm! Thoải mái như ở nhà, quý khách có thể thỏa
+                  sức nghỉ ngơi hay đi du lịch mà không lo chỗ ở.
+                </p>
+              </div>
+              <div class="info-mid-ctn__contact">
+                <div class="info-mid-ctn__contact-phone">
+                  <i class="fas fa-phone-alt"></i>
+                  <p class="info-mid-ctn__contact-phone-number">
+                    +84 338 339 449
+                  </p>
+                </div>
+                <div class="info-mid-ctn__contact-phone">
+                  <i class="far fa-envelope"></i>
+                  <p class="info-mid-ctn__contact-phone-number">
+                    4wormhotel@gmail.com
+                  </p>
+                </div>
+                <div class="info-mid-ctn__contact-phone">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p class="info-mid-ctn__contact-phone-number">
+                    439 Hùng Vương, Tam Kỳ Street
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script type="text/javascript">
+        $(function() {
+            $('#datepicker').datepicker();
+        });
+
+        $(function() {
+            $('#datepicker1').datepicker();
+        });
+
+    </script>
+</body>
+</html>
