@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giao Diện Đặt Phòng</title>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -22,19 +21,12 @@
     href="assets/font/fontawesome-free-5.15.3-web/css/all.min.css"
   />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="assets/css/base.css" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/detail.css" />
-  <link rel="stylesheet" href="assets/css/reponsive.css" />
-  <link rel="stylesheet" href="assets/vendors/grid.css" />
-  <link rel="stylesheet" href="assets/css/bookroom.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/book-history.css" />
+    <link rel="stylesheet" href="assets/css/reponsive.css" />
+    <link rel="stylesheet" href="assets/vendors/grid.css" />
+    <title>Lịch Sử Đặt Phòng</title>
 </head>
 <body>
     <header class="header">
@@ -171,153 +163,39 @@
           </div>
         </div>
       </header>
-
-      <div class="detail-room">
+      <div class="book-history" >
         <div class="grid" >
-            <div class="row">
-              <div class="col-md-7 information ">
-                  <div class="infor-title" >Thông Tin Liên Lạc</div>
-                  <div class="col-md-6 edit" >
-                    <div class="infor-name-ctn" >
-                        <div>Họ Và Tên:</div>
-                        <input class="infor-input infor-name"  />
-                    </div>
-                    <form>
-                        <div class="row form-group">
-                            <label for="date" class="col-sm-12 col-form-label">Ngày Đến</label>
-                            <div class="col-sm-12">
-                                <div class="input-group date" id="datepicker">
-                                    <input type="text" class="form-control">
-                                    <span class="input-group-append">
-                                        <span class="input-group-text bg-white">
-                                            <i class="fa fa-calendar"></i>
-                                        </span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="infor-name-ctn" >
-                        <div>Email:</div>
-                        <input class="infor-input infor-email"  />
-                    </div>
-                    <div class="infor-name-ctn" >
-                        <div>Số Thẻ:</div>
-                        <input class="infor-input infor-number"  />
-                    </div>
-                    <div class="service-option" >
-                        <div class="service-option-title" >
-                            Dịch Vụ Tùy Chọn
-                        </div>
-                        <div class="service-option-select"  >
-                            <input type="checkbox">
-                            <p>Xe đưa đón đến sân bay</p>
-                        </div>
-                        <div class="service-option-select"  >
-                            <input type="checkbox">
-                            <p>Giặt ủi quần áo</p>
-                        </div>
-                        <div class="service-option-select"  >
-                            <input type="checkbox">
-                            <p>Dịch vụ karaoke</p>
-                        </div>
+            <div class="row" >
+                <div class="col-md-12 book-right "  >
+                    <div class="form-title" >Lịch Sử Đặt Phòng</div>
+                    <div class="table-form-infor" >
+                      <table  >
+                          <tr class="form-header">
+                              <th>ID</th>
+                              <th>Tên Phòng</th>
+                              <th>Ngày Đến</th>
+                              <th>Ngày Đi</th>
+                              <th>Giá</th>
+                              <th>Ngày Đặt</th>
+                              <th>Action</th>
+                              
+                          </tr>
+                          <tr>
+                              <td>1 </td>
+                              <td>Double </td>
+                              <td>25/3/2022 </td>
+                              <td>26/3/2022 </td>
+                              <td>120.000 </td>
+                              <td>25/3/2022 </td>
+                              <td><button type="button" class="btn btn-warning">Hủy</button></td>
+
+                          </tr>
+                      </table>
                     </div>
                 </div>
-                <div class="col-md-6 edit" >
-                    <div class="infor-name-ctn" >
-                        <div>Họ Và Tên:</div>
-                        <input class="infor-input infor-name"  />
-                    </div>
-                    <form>
-                        <div class="row form-group">
-                            <label for="date" class="col-sm-12 col-form-label">Ngày Đi</label>
-                            <div class="col-sm-12">
-                                <div class="input-group date" id="datepicker1">
-                                    <input type="text" class="form-control">
-                                    <span class="input-group-append">
-                                        <span class="input-group-text bg-white">
-                                            <i class="fa fa-calendar"></i>
-                                        </span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="infor-name-ctn" >
-                        <div>Nhập lại Email:</div>
-                        <input class="infor-input infor-email"  />
-                    </div>
-                    <div class="infor-name-ctn" >
-                        <div>Chúng tôi chấp nhận thanh toán sau</div>
-                        <div class="icon-container">
-                            <i class="fa fa-cc-visa" style="color:navy;"></i>
-                            <i class="fa fa-cc-amex" style="color:blue;"></i>
-                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                            <i class="fa fa-cc-discover" style="color:orange;"></i>
-                          </div>
-                    </div>
-                    <div class="service-option" >
-                        <div class="service-option-title" >
-                            Xác Nhận Đặt Phòng
-                        </div>
-                        <div class="service-option-select "  >
-                            <input  class="service-option-select-input" type="checkbox">
-                            <p>Tôi đã đọc và đông ý với các điều khoản & điều kiện và chính sách bảo mật</p>
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="infor-btn" >
-                    <div class="btn-book" >
-                        Đặt Phòng
-                    </div>
-                </div>
-              </div>
-              <div class="col-md-5">
-                <h2 class="detail-room-title" >IN-ROOM AMENITIES</h2>
-                <div class="row img-icon">
-                  <div class="col-md-12 description-room " >
-                    <img class="descrip-img" src="/assets/img/suite.jpg" alt="" />
-                    <div class="decscrip-room" >
-                      <p class="decscrip-room-title" >Suite</p>
-                      <p>Double Room</p>
-                    </div>
-                  </div>
-                  <div
-                  style="background: #333; width: 300px; height: 1px; margin:10px auto"
-                ></div>
-                  <div class="col-md-6">
-                    <img src="/assets/img/icon1.png" alt="" />
-                    <p>Phục Vụ Ăn Sáng Tại Phòng</p>
-                  </div>
-                  <div class="col-md-6" style="margin-top: -9px;" >
-                    <img src="/assets/img/icon2.png" alt="" />
-                    <p>33 m + Ban Công</p>
-                  </div>
-                  <div class="col-md-6">
-                    <img src="/assets/img/icon5.png" alt="" />
-                    <p>Bồn Tắm</p>
-                  </div>
-                  <div class="col-md-6">
-                    <img src="/assets/img/icon4.png" alt="" />
-                    <p>Loại Giường: King/ Twin</p>
-                  </div>
-                 
-                </div>
-                <div
-                  style="background: #333; width: 300px; height: 1px; margin: auto"
-                ></div>
-                <div class="book book-edit">
-                 <div class="book-price" >
-                    Giá Tiền: 
-                    <p>VND 1,500,000 / Đêm</p>
-                 </div>
-                 <p class="book-edit-content">Mọi thắc mắc xin vui lòng liên hệ 1900 0000 để được hỗ trợ trực tiếp</p>
-                </div>
-              </div>
             </div>
         </div>
-    </div>
+      </div>
       <footer class="footer">
         <div class="map-top">
           <div class="grid">
@@ -413,16 +291,5 @@
           </div>
         </div>
       </footer>
-      <script type="text/javascript">
-        $(function() {
-            $('#datepicker').datepicker();
-        });
-
-        $(function() {
-            $('#datepicker1').datepicker();
-        });
-
-    </script>
 </body>
 </html>
-<!-- chưa reponve -->
