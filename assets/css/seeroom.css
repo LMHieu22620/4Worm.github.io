@@ -2,7 +2,7 @@
     height: auto;
 }
 .seeroom-room-top {
-    background-color: black;
+    background: url(/assets/img/bannerRooms.jpg);
     height: 400px;
     color: white;
     padding: 20px;

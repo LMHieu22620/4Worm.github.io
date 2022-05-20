@@ -6,15 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/seeroom.css">
-    <!-- <link rel="stylesheet" href="assets/css/recritment.css"> -->
     <link rel="stylesheet" href="assets/css/reponsive.css">
-    <link href='https://css.gg/css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/vendors/grid.css">
-    <title>Phong</title>
+    <link rel="stylesheet" href="assets/css/book-room-new.css">
+    <link rel="stylesheet" href="assets/css/search-room.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Lato|Fjalla+One|Montserrat|Roboto&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <title>Document</title>
 </head>
 <body>
     <header class="header" >
@@ -46,37 +57,37 @@
                             <a href="/index.html">
                                 <img src="assets/img/Logo1.png" alt="">
                             </a>
+                            
                         </div>
                         <div class="header__header-row-main-nav" id="header-moble">
-                            <div class="header__header-row-main-mobie-close"  onclick="removeitem()">
+                            <div class="header__header-row-main-mobie-close"   onclick="removeitem()">
                                 <i class="fas fa-times"></i>
                             </div>
                             <ul class="header__header-row-main-nav-menu">
-                                <li class="header__header-row-main-nav-item">
+                                <li class="header__header-row-main-nav-item"  >
                                     <i class="fas fa-home header__header-row-main-nav-item-icon"></i>
-                                    <a href="/index.html" class="header__header-row-main-nav-item-link">
-                                        trang chủ
+                                    <a href="/index.html" class="header__header-row-main-nav-item-link"  >
+                                        Phòng
                                     </a>
                                 </li>
-                              
+                               
                                 <li class="header__header-row-main-nav-item">
                                     <i class="fas fa-person-booth header__header-row-main-nav-item-icon"></i>
-                                    <a href="./xemphong.html" class="header__header-row-main-nav-item-link add-color">
+                                    <a href="./sukien.html" class="header__header-row-main-nav-item-link  add-color ">
 
-                                        phòng
+                                        Tin Tức Sự Kiện
                                     </a>
                                 </li>
                                 <li class="header__header-row-main-nav-item">
                                     <i class="far fa-newspaper header__header-row-main-nav-item-icon"></i>
-                                    <a href="./sukien.html" class="header__header-row-main-nav-item-link">
-                                        tin tức
+                                    <a href="./quanlylichsudatphong.html" class="header__header-row-main-nav-item-link">
+                                        Lịch Sử Đặt Phòng
                                     </a>
                                 </li>
                                 <li class="header__header-row-main-nav-item">
                                     <i class="fas fa-phone-alt header__header-row-main-nav-item-icon"></i>
                                     <a href="/lienhe.html" class="header__header-row-main-nav-item-link">
                                         liên hệ
-
                                     </a>
                                 </li>
                             </ul>
@@ -105,7 +116,6 @@
                                     Đăng nhập
                                 </span>
                             </a>
-                            
                         </div>
                         </div>
                         
@@ -117,110 +127,57 @@
         </div>
 
     </header>
-    <div class="seeroom-room" >
-        <div class="seeroom-room-top" >
-            <div class="grid seeroom-room-flex " >
-                <h4 class="seeroom-room-name" >
-                    4worm hotel
-                </h4>
-                <h1 class="seeroom-room-title" >Welcome to 4WORM!</h1>
-                <p class="seeroom-room-content" >thoải mái như ở nhà</p>
-            </div>
-        </div>
-        <div class="grid" >
-            <div class="seeroom-room-ytb" >
-                <div class="seeroom-room-ytb-top" >
-                    <div class="seeroom-room-ytb-top-flex" >
-                        <div class="seeroom-room-ytb-top-boder" >
-                            <iframe width="560" height="315"  src="https://www.youtube.com/embed/6BxdGUu5VAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            
-                            <img class="seeroom-room-ytb-top-shadow" src="assets/img/shadow-6446705.png" alt="">
-                        </div>
-                    </div>
-                    <div class="btn-flex-seeroom" >
-                        <div class="btn-seeroom" >Đặt Phòng</div>
-                    </div>
-                    <p class="btn-seeroom-content" >Nhanh chóng đặt phòng cùng 4WORM nào!</p>
-                </div>
-            </div>
-            <div class="seeroom-room-type" >
-                <div class="seeroom-room-type-name" >
-                    LOẠI PHÒNG
-                </div>
-                <h1 class="seeroom-room-type-title">
-                    Single Room & Double Room
-                </h1>
-               
-                <div class="room-ctn-ctn">
-                    <div class="room-ctn">
-                        <img class="room-ctn-img"
-                            src="./assets/img/singleroom.jpg"
-                            alt="">
-                        <span class="room-ctn__outline">
-                           
-                            <div class="room-content">
-                                Single Room
-                            </div>
-                            <span class="seeroom-room-type-single" >Single Room (SGL): Là loại phòng có 1 giường dành cho 1 người ngủ.</span>
-                        </span>
-                    </div>
 
-                    <div class="room-ctn">
-                        <img class="room-ctn-img"
-                            src="./assets/img/doubleroom.jpg"
-                            alt="">
-                        <span class="room-ctn__outline">
-                           
-                            <div class="room-content">
-                                Double Room
+    <div class="book-room-new" >
+        <div class="bgr-img bgr-book-room">
+                <div class="grid">
+                    <div class="bgr-img__ctn book-room-new-edit">
+                        <h1 class="bgr-img__text-big " >
+                            4WORM HOTEL
+                        </h1>
+                        <p class="bgr-img__text-content" >
+                            Khách sạn 4worm kính chào quý khách! 4worm mong rằng sẽ là điểm đến tốt nhất dành cho bạn.
+                            Hãy đến với 4worm để trải nghiệm nhé
+                        </p>
+                        <a href="#" class="bgr-img__text-btn" >
+                            View Our Room
+                        </a>
+                    </div>
+                </div>
+                <div class="book-room-form" >
+                    <section class="book">
+                        <div class="container flex">
+                          <div class="input form-book-check">
+                            <div class="box ">
+                              <label class="book-title" >Ngày Đến</label>
+                              <input type="date" class="see-card " placeholder="Check-in-Date">
                             </div>
-                            <span class="seeroom-room-type-single" >Double Room được viết tắt DBL, là phòng có 01 giường lớn </span>
-                        </span>
-                    </div>
-                </div>
-                <div class="seeroom-dash" ></div>
-                
-            </div>
-            <div class="seeroom-room-kind" >
-                <div class="seeroom-room-kind-title">
-                    Kind of room
-                </div>
-                <div class="seeroom-room-kind-content" >
-                    Những phòng ở cao cấp nhất!
-                </div>
-                <div class="seeroom-room-kind-ctn" >
-                    <div class="seeroom-room-kind-item" >
-                        <img  class="seeroom-room-kind-item-img" src="assets/img/standand.jpg" alt="">
-                        <h4 class="seeroom-room-kind-item-title" >Standard</h4>
-                        <div class="seeroom-room-kind-item-dash" ><p></p></div>
-                        <p class="seeroom-room-kind-item-content" >Là loại phòng đơn giản nhất trong các loại phòng khách sạn. Phòng này có diện tích nhỏ (thường dưới 20m2), đặt một giường đôi hoặc 2 giường đơn với các trang thiết bị hay đồ nội thất khác được tối giản nhất có thể.</p>
-                    </div>
-                    <div class="seeroom-room-kind-item" >
-                        <img  class="seeroom-room-kind-item-img" src="assets/img/superior.jpg" alt="">
-                        <h4 class="seeroom-room-kind-item-title" >Superior</h4>
-                        <div class="seeroom-room-kind-item-dash" ><p></p></div>
-                        <p class="seeroom-room-kind-item-content" >SUP thường có diện tích lớn hơn 20m2, đặt 3 giường đơn hoặc 1 giường đôi 2 giường đơn. Đồ nội thất cũng đơn giản, chỉ có những đồ cơ bản như Tivi, tủ quần áo, bàn nước nhỏ,… Phòng loại này có view đẹp hơn phòng Standard, có thể có ban công hoặc không. Về giá thì cũng tương đương với chất lượng phòng, cao hơn phòng tiêu chuẩn một chút.</p>
-                    </div>
-                    <div class="seeroom-room-kind-item" >
-                        <img  class="seeroom-room-kind-item-img" src="assets/img/suite.jpg" alt="">
-                        <h4 class="seeroom-room-kind-item-title" >Suite</h4>
-                        <div class="seeroom-room-kind-item-dash" ><p></p></div>
-                        <p class="seeroom-room-kind-item-content" >Là loại phòng cao cấp nhất trong khách sạn và cũng là phòng có diện tích lớn nhất, kích thước nhỏ nhất là 60m2 và lớn nhất là 120m2. Vì là phòng cao cấp nhất nên những đặc điểm khác đương nhiên cũng tốt nhất như view đẹp nhất, thiết kế đẹp nhất, dịch vụ tốt nhất,… Phòng này thường được đặt tại những tầm cao nhất của khách sạn, có thể ở nguyên một tầng riêng biệt để đảm bảo tính riêng tư và chuyên nghiệp.</p>
-                    </div>
-                </div>
-                <div class="seeroom-room-footer" >
-                    <div class="seeroom-room-footer-title" >4worm hotel</div>
-                    <div class="seeroom-room-footer-content">Thoải mái như ở nhà!</div>
-                    <div class="seeroom-room-footer-icon" >
-                        <i class="gg-facebook"></i>
-                        <i class="gg-twitter"></i>
-                        <i class="gg-youtube"></i>
-                    </div>
-                    <div class="seeroom-room-footer-end" >All rights reserved.</div>
+                            <div class="box">
+                              <label class="book-title" >Ngày Đi</label>
+                              <input type="date"  class="see-card " placeholder="Check-out-Date">
+                            </div>
+                            <div class="box">
+                              <label class="book-title" >Giá</label> <br>
+                              <input type="number"  class="see-card " placeholder="0">
+                            </div>
+                            <div class="box">
+                              <label class="book-title" >Loại Phòng</label> <br>
+                              <select name="" class="see-card "id="option-value">
+                                  <option  class="see-card " value="">Tất cả</option>
+                                  <option  class="see-card " value="">Double Room</option>
+                                  <option  class="see-card " value="">Single Room</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="search">
+                            <input type="submit" value="Tìm Kiếm">
+                          </div>
+                        </div>
+                      </section>
                 </div>
             </div>
-        </div>
     </div>
+
     <footer class="footer">
         <div class="map-top">
             <div class="grid">
@@ -321,10 +278,10 @@
     </footer>
     <button onclick="topFunction()" id="myBtn" title="Go to top">
         <i class="fas fa-chevron-up"></i>
-    </button>
-
+      </button>
+  
     <script src="script.js">
-
+  
     </script>
 </body>
 </html>

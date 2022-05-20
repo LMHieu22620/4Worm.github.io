@@ -2,14 +2,15 @@
 .book-left {
     margin: 20px 0;
     padding: 10px;
-    height: 290px;
+    /* height: 290px; */
 }
 .book-history {
-    margin-bottom: 20px;
-    background-image: url('http://127.0.0.1:5500/assets/img/slide.jpg');
-    background-position: center;
-    height: 100vh;
-
+        background-image: url(http://127.0.0.1:5500/assets/img/slide.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100vw;
+        width: 100vw;
+        height: 100vh;
 }
 .book-history-information {
     height: 100%;

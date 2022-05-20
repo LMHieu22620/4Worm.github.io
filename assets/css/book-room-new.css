@@ -1,0 +1,32 @@
+.bgr-book-room {
+    background-image: url(/assets/img/book-room-nnew.jpg) !important;
+    height: 80vh;
+}
+
+.book-room-new-edit {
+    transform: translate(-50%, -110%);
+}
+.book-room-form {
+    position: absolute;
+    /* margin-bottom: 0; */
+    width: 100%;
+    height: 25%;
+    bottom: 0px;
+    background-image: url(/assets/img/promo-blur-notinclude.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 0%;
+
+}
+
+.book .input {
+    background: none !important;
+}
+.search {
+    background: none !important;
+    
+}
+.book-title {
+    color: white !important;
+}
